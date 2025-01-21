@@ -1,0 +1,15 @@
+<div class="d-flex flex-row flex-wrap justify-between">
+    <div class="reward" *ngFor="let reward of rewardsData">
+        <mat-card class="example-card card">
+            <mat-card-content class="d-flex flex-column">
+                <img [src]="reward?.display_img_url" [alt]="reward.display_img_url">
+                <div class="d-flex justify-center align-center flex-column">
+                    <h4 class="mt-1 mb-2">{{reward.name}}</h4>
+                    <label for="">{{reward.points}} Points</label>
+                    <hr>
+                    <label>Valid Until {{reward.valid_until | date}}</label>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
