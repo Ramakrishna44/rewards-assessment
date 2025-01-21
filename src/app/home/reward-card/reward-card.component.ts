@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-reward-card',
-  imports: [MatCardModule, CommonModule],
+  imports: [MatCardModule, CommonModule, MatButtonModule],
   templateUrl: './reward-card.component.html',
   styleUrl: './reward-card.component.scss'
 })
@@ -12,9 +13,9 @@ export class RewardCardComponent {
  rewardsData = [
   {
       "pk": 989,
-      "name": "Chanel",
+      "name": "Jeep",
       "points": 15,
-      "display_img_url": "assets/images/logo-1.png",
+      "display_img_url": "assets/images/logo-10.jpeg",
       "quantity": 20,
       "valid_until": "2024-02-03T00:00:00",
       "low_quantity": 10
@@ -24,15 +25,15 @@ export class RewardCardComponent {
       "name": "Versace",
       "points": 10,
       "display_img_url": "assets/images/logo-2.png",
-      "quantity": 25,
+      "quantity": 50,
       "valid_until": "",
       "low_quantity": 10
   },
   {
       "pk": 981,
-      "name": "Rolex",
+      "name": "Lego",
       "points": 1,
-      "display_img_url": "assets/images/logo-3.png",
+      "display_img_url": "assets/images/logo-8.png",
       "quantity": 2,
       "valid_until": "2024-01-31T00:00:00",
       "low_quantity": 10
@@ -40,10 +41,10 @@ export class RewardCardComponent {
   
   {
       "pk": 980,
-      "name": "Zara",
+      "name": "All",
       "points": 20,
-      "display_img_url": "assets/images/logo-4.png",
-      "quantity": 27,
+      "display_img_url": "assets/images/logo-9.jpeg",
+      "quantity": 0,
       "valid_until": "2024-01-25T00:00:00",
       "low_quantity": 20
   },
@@ -62,7 +63,7 @@ export class RewardCardComponent {
       "pk": 909,
       "name": "BRAND",
       "points": 25,
-      "display_img_url": "assets/images/logo-6.png",
+      "display_img_url": "assets/images/logo-1.png",
       "quantity": 30,
       "valid_until": "",
       "low_quantity": 15
@@ -82,8 +83,8 @@ export class RewardCardComponent {
       "pk": 954,
       "name": "Chanel",
       "points": 100,
-      "display_img_url": "assets/images/logo-1.png",
-      "quantity": 3,
+      "display_img_url": "",
+      "quantity": 30,
       "valid_until": "",
       "low_quantity": 6
   },
@@ -98,4 +99,5 @@ export class RewardCardComponent {
       "low_quantity": 10
   }
 ]
+demoImage = 'assets/images/logo-6.png';
 }
