@@ -1,5 +1,26 @@
-<app-header></app-header>
-<div class="main-container">
-  <app-home></app-home>
+<div class="position-relative">
+  <app-header></app-header>
+  <mat-sidenav-container class="example-container position-absolute">
+    <mat-sidenav #sidenav mode="side" position="end" opened="false">
+      <div class="p-2">
+        <div class="d-flex justify-between">
+          <h4 class="mt-1 mb-1">Filter By</h4>
+          <h4 class="reset-label mt-1 mb-1" (click)="resetSort()">Reset All</h4>
+        </div>    
+        <hr>
+        <h3>Sort</h3>
+        <div class="d-flex">
+          <div class="sort-label mr-1" [ngClass]="{'sort-active': sortValue === 0}" (click)="sortRewards(0)">AtoZ</div>
+          <div class="sort-label" [ngClass]="{'sort-active': sortValue === 1}" (click)="sortRewards(1)">ZtoA</div>
+        </div>
+      </div>
+    </mat-sidenav>
+  
+  </mat-sidenav-container>
+  <div class="main-container">
+    <app-home></app-home>
+  </div>
+  <app-footer></app-footer>
 </div>
-<app-footer></app-footer>
+
+

@@ -225,3 +225,40 @@ hr {
 .position-absolute {
     position: absolute;
 }
+
+.example-container {
+    height: 100vh;
+    display: flex;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+  .mat-drawer-container  {
+    position: absolute !important;
+    right: 0;
+  }
+  
+  .p-2{
+    padding: 1rem;
+  }
+
+  .sort-label {
+    padding: 0.4rem;
+    border: 1px solid grey;
+    border-radius: 0.3rem;
+    color: grey;
+    cursor: pointer;
+  }
+
+
+  .sort-active {
+    background-color: #ed292d;
+    color: #fff;
+  }
+
+  .reset-label {
+    color: #bc9116;
+    cursor: pointer;
+  }

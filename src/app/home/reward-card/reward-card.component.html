@@ -1,18 +1,20 @@
 <div>
     <div class="d-flex justify-between align-center mr-2 ml-2">
-        <label class="results-text">{{rewardsData.length}} results found</label>
+        <label class="results-text">{{displayData.length}} results found</label>
         <div>
-            <button class="button sort-button">Sort</button>
+            <button class="button sort-button" (click)="openSidenav()">Sort</button>
         </div>
     </div>
     <div class="d-flex flex-row flex-wrap justify-between">
-        <div class="reward" *ngFor="let reward of rewardsData">
+        <div class="reward" *ngFor="let reward of displayData">
             <mat-card class="example-card card">
                 <mat-card-content class="d-flex flex-column">
                     <div class="position-relative">
-                        <img [src]="reward.display_img_url ? reward.display_img_url : demoImage" [alt]="reward.display_img_url">
+                        <img [src]="reward.display_img_url ? reward.display_img_url : demoImage"
+                            [alt]="reward.display_img_url">
                         <div class="position-absolute stock-out" *ngIf="!reward.quantity">(Out of stock)</div>
-                        <div class="position-absolute demand d-flex flex-column" *ngIf="reward.quantity > 0 && reward.quantity < reward.low_quantity">
+                        <div class="position-absolute demand d-flex flex-column"
+                            *ngIf="reward.quantity > 0 && reward.quantity < reward.low_quantity">
                             <label class="high">ON HIGH DEMAND</label>
                             <label class="left">(Only {{reward.quantity}} rewards left)</label>
                         </div>
@@ -21,7 +23,8 @@
                         <h4 class="mt-1 mb-1">{{reward.name}}</h4>
                         <label class="points">{{reward.points}} Points</label>
                         <hr>
-                        <label *ngIf="reward.valid_until" class="info"> <span>Valid Until</span> {{reward.valid_until | date}}</label>
+                        <label *ngIf="reward.valid_until" class="info"> <span>Valid Until</span> {{reward.valid_until |
+                            date}}</label>
                     </div>
                 </mat-card-content>
             </mat-card>
@@ -29,3 +32,4 @@
     </div>
 </div>
 
+  
