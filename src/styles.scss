@@ -1,10 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     font-size: 16px;
 }
 .d-flex {
     display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
 }
 .justify-between {
     justify-content: space-between;
@@ -17,4 +24,30 @@ body {
 }
 .mr-2 {
     margin-right: 1rem;
+}
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+.mb-2 {
+    margin-bottom: 1rem;
+}
+.header {
+    height: 2rem;
+    background-color: #ed292d;
+    padding: 1rem 10rem;
+    .logo {
+        height: 2.5rem;
+        width: 3rem;
+    }
+    .user-logo {
+        border-radius: 0.5rem;
+    }
+}
+.main-container {
+    height: calc(100vh - 14rem);
+}
+.footer {
+    border-top: 1px solid grey;
+    height: 7rem; 
+    padding: 1rem 10rem;
 }
