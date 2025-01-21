@@ -1,2 +1,2 @@
 # rewards-assessment
-Rewardz company assessment
+Rewardz company assessment.
