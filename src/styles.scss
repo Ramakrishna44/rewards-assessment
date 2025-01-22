@@ -100,10 +100,10 @@ body {
 
     .filter-chip {
         border: 1px grey;
-        border-radius: 0.5rem;
+        border-radius: 0.9rem;
         background-color: #dcdcdc;
         font-size: 0.8rem;
-        padding: 0.4rem;
+        padding: 0.5rem;
         color: grey;
     }
 }
@@ -278,11 +278,24 @@ hr {
 .white-backgrounded-field .mdc-notched-outline__notch,
 .white-backgrounded-field .mdc-notched-outline__leading,
 .white-backgrounded-field .mdc-notched-outline__trailing {
-    background-color: white;
+    background-color: #fff !important;
+    border-color: #fff !important;
 }
 
 .white-backgrounded-field .mdc-text-field--outlined .mdc-notched-outline {
     z-index: 0;
     border: none;
-  }
-  
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.apply-button {
+    bottom: 0;
+    width: 90%;
+}

@@ -1,8 +1,8 @@
-<div class="position-relative">
+<div class="position-relative h-100">
   <app-header></app-header>
   <mat-sidenav-container class="example-container position-absolute">
     <mat-sidenav #sidenav mode="side" position="end" opened="false">
-      <div class="p-2">
+      <div class="p-2 position-relative h-80">
         <div class="d-flex justify-between">
           <h4 class="mt-1 mb-1">Filter By</h4>
           <h4 class="reset-label mt-1 mb-1" (click)="resetSort()">Reset All</h4>
@@ -13,6 +13,7 @@
           <div class="sort-label mr-1" [ngClass]="{'sort-active': sortValue === 0}" (click)="sortRewards(0)">AtoZ</div>
           <div class="sort-label" [ngClass]="{'sort-active': sortValue === 1}" (click)="sortRewards(1)">ZtoA</div>
         </div>
+        <button class="button apply-button position-absolute" (click)="applySort()">Apply</button>
       </div>
     </mat-sidenav>
   

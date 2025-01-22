@@ -28,12 +28,14 @@ export class AppComponent {
   }
 
   resetSort() {
-    this.sortRewards(2);
+    this.sortValue = 2;
   }
   sortRewards(value: number) {
+    this.sortValue = value;
+  }
+  applySort() {
     setTimeout(() => {
-      this.sortValue = value;
-      this.appService.setSort(value);
+      this.appService.setSort(this.sortValue);
       this.appService.toggle();
     }, 100);
   }
