@@ -95,7 +95,7 @@ body {
     padding: 1rem 10rem;
 
     .search-label {
-        margin: 1rem 0.5rem 0rem 0.5rem;
+        margin: 1rem 0.5rem 0.5rem 0.5rem;
     }
 
     .filter-chip {
@@ -121,13 +121,9 @@ body {
     width: 100%;
 }
 
-.example-full-width {
-    width: 100%;
-}
-
 mat-card {
     box-shadow: 0px 0px 1px 0px #9b9b9b, 0 1px 1px 0 #9b9b9b, 0 1px 1px 0 #9b9b9b !important;
-    border-radius: 0.3rem !important;
+    border-radius: 0.5rem !important;
     background-color: #fff !important;
 }
 
@@ -137,6 +133,7 @@ mat-card {
     .card {
         width: 14rem;
         height: 16.5rem;
+
         mat-card-content {
             padding: 0 !important;
         }
@@ -144,23 +141,27 @@ mat-card {
         img {
             width: 100%;
             height: 10rem;
-            border-top-left-radius: 0.36rem;
-            border-top-right-radius: 0.36rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
         }
 
         .info {
-           font-size: 0.8rem;
+            font-size: 0.8rem;
+
             span {
                 font-size: 0.7rem !important;
                 color: grey;
             }
         }
+
         .points {
             font-size: 0.8rem;
         }
+
         .content {
             padding: 0rem 1rem;
         }
+
         .stock-out {
             background-color: #fff;
             color: grey;
@@ -171,6 +172,7 @@ mat-card {
             bottom: 10px;
             left: 5px;
         }
+
         .demand {
             background-color: #fff;
             border-radius: 0.7rem;
@@ -180,10 +182,12 @@ mat-card {
             width: fit-content;
             bottom: 10px;
             left: 5px;
+
             .high {
                 color: #eeee50;
                 margin-bottom: 2px;
             }
+
             .left {
                 color: grey;
             }
@@ -229,36 +233,56 @@ hr {
 .example-container {
     height: 100vh;
     display: flex;
-  }
-  
-  .content {
-    padding: 20px;
-  }
+}
 
-  .mat-drawer-container  {
+.content {
+    padding: 20px;
+}
+
+.mat-drawer-container {
     position: absolute !important;
     right: 0;
-  }
-  
-  .p-2{
-    padding: 1rem;
-  }
+}
 
-  .sort-label {
+.p-2 {
+    padding: 1rem;
+}
+
+.white-backgrounded-field {
+    width: 100%;
+}
+
+.sort-label {
     padding: 0.4rem;
     border: 1px solid grey;
     border-radius: 0.3rem;
     color: grey;
     cursor: pointer;
-  }
+}
 
 
-  .sort-active {
+.sort-active {
     background-color: #ed292d;
     color: #fff;
-  }
+}
 
-  .reset-label {
+.reset-label {
     color: #bc9116;
     cursor: pointer;
+}
+
+.categor-card {
+    height: 100%;
+}
+
+.white-backgrounded-field .mdc-notched-outline__notch,
+.white-backgrounded-field .mdc-notched-outline__leading,
+.white-backgrounded-field .mdc-notched-outline__trailing {
+    background-color: white;
+}
+
+.white-backgrounded-field .mdc-text-field--outlined .mdc-notched-outline {
+    z-index: 0;
+    border: none;
   }
+  
